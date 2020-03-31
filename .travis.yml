@@ -9,8 +9,8 @@ script:
 - npm run build
 deploy:
   provider: s3
-  access_key_id: 
-  secret_access_key: 
+  access_key_id: $AWSKEY
+  secret_access_key: $AWSSECRET
   bucket: mbendatravis
   local_dir: build
   acl: public_read
