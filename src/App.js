@@ -7,6 +7,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
+        <p> Bonjour monde</p>
         <p>{this.props.value}</p>
         <button onClick={() => this.props.addOne()}>ADD ONE</button>
         <button onClick={() => this.props.addX(12)}>ADD X</button>
